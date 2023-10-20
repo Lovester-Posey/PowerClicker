@@ -32,8 +32,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private UIManager iManager;
 
-    private UpgradeType upgrade;
-
     private float cooldown = 1;
 
 
@@ -66,8 +64,8 @@ public class GameManager : MonoBehaviour
         //Spawn a new floating text
         GameObject newFloatingText = Instantiate(floatingTextPrefab, boxTransform);
 
-        //Generate a random position around the muffin
-        Vector3 randomPosition = GetRandomPosAroundMuffin();
+        //Generate a random position around the battery
+        Vector3 randomPosition = GetRandomPosAroundBattery();
 
         //Position the new floating text at that random position
         newFloatingText.transform.localPosition = randomPosition;
@@ -78,7 +76,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private Vector3 GetRandomPosAroundMuffin()
+    private Vector3 GetRandomPosAroundBattery()
     {
         return new Vector3(Random.Range(-200, 200), Random.Range(30, 150));
     }

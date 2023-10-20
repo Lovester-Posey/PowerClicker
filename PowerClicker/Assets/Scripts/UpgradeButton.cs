@@ -44,7 +44,7 @@ public class UpgradeButton : MonoBehaviour
             priceText.color = Color.green;
         }*/
 
-        //Thing we want to see = <Boolean condition> ? <value if true> : <value if fasle>
+        //(Teneary Operator) Thing we want to see = <Boolean condition> ? <value if true> : <value if fasle>
         priceText.color = gameManager.totalClicks < price ? Color.red : Color.green;
     }
 

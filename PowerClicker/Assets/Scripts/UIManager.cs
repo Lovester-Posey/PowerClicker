@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     {
         if (totalClicks == 1)
         {
-            wattsText.text = totalClicks.ToString() + " watt";   //update muffin counter
+            wattsText.text = totalClicks.ToString() + " watt";   //update Power counter
 
         }
         else
@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
 
         if (wattsPerSecond == 1)
         {
-            wattsPerSecondText.text = wattsPerSecond.ToString() + " watt per second";   //update muffin counter
+            wattsPerSecondText.text = wattsPerSecond.ToString() + " watt per second";   //update Power counter
 
         }
         else
